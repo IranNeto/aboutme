@@ -1,5 +1,6 @@
 html {
     background: bisque;
+    font-family: Sana, sans-serif;
 }
 
 @media only screen and (max-width: 640px) {
@@ -8,12 +9,13 @@ html {
 
 .topbar {
     background: white;
-    padding: 20px 5px;
+    padding: 28px 5px;
     box-sizing: border-box;
     color: #333;
     font-size: 32px;
-    font-family: Sana, sans-serif;
+
     text-decoration: none;
+    box-shadow: 0 1px 0 0 rgba(3 3 3);
 }
 
 .ul-logo {
@@ -27,8 +29,8 @@ html {
 
 .logo {
     color: #333;
-    font-size: 32px;
-    font-family: Sana, sans-serif;
+    font-size: 28px;
+    font-family: Tahoma, sans-serif;
     text-decoration: none;
     padding-left: 4px;
 }
@@ -37,14 +39,46 @@ html {
     position: relative;
     display: inline-block;
     left: 555px;
+    font-size: 28px;
 }
 
 .nav-link {
-    padding: 0 5px;
+    padding-left: 25px;
     display: inline;
 }
 
 .nav-link a {
     text-decoration: none;
     color: inherit;
+}
+
+.bold-link {
+    font-weight: bold;
+}
+
+.main-image {
+    display: block;
+    width: 100%;
+    height: 1225px;
+}
+
+.main-image img {
+    object-fit: fill;
+    width: 100%;
+}
+
+.user-headline {
+    position: relative;
+    bottom: 200px;
+}
+
+.user-headline h2 {
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.user-headline .user-name {
+    padding: 30px 0;
+    text-transform: uppercase;
 }
