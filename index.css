@@ -7,6 +7,12 @@ html {
 
 }
 
+header {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
 .topbar {
     background: white;
     padding: 60px 30px;
@@ -116,4 +122,27 @@ html {
     vertical-align: bottom;
     text-decoration: none;
     padding-left: 10px;
+}
+
+.bio p {
+    font-size: 24px;
+    color: #333333;
+    padding: 20px 0px;
+}
+
+.meta {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.meta h3 {
+    text-transform: uppercase;
+    text-space: 2px;
+    color: #999;
+    letter-spacing: 10px;
+}
+
+.meta p {
+    padding: 20px 0 50px 0;
 }
