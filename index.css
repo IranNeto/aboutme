@@ -1,5 +1,5 @@
 html {
-    background: bisque;
+    background: whitesmoke;
     font-family: Sana, sans-serif;
 }
 
@@ -9,13 +9,12 @@ html {
 
 .topbar {
     background: white;
-    padding: 28px 5px;
+    padding: 60px 30px;
     box-sizing: border-box;
     color: #333;
-    font-size: 32px;
-
     text-decoration: none;
     box-shadow: 0 1px 0 0 rgba(3 3 3);
+    vertical-align: baseline;
 }
 
 .ul-logo {
@@ -23,13 +22,9 @@ html {
     display: inline-block;
 }
 
-.logo-container {
-    padding-left: 4px;
-}
-
 .logo {
     color: #333;
-    font-size: 28px;
+    font-size: 32px;
     font-family: Tahoma, sans-serif;
     text-decoration: none;
     padding-left: 4px;
@@ -38,8 +33,10 @@ html {
 .user-links {
     position: relative;
     display: inline-block;
-    left: 555px;
-    font-size: 28px;
+    float: right;
+    font-size: 32px;
+    text-transform: uppercase;
+    margin-top: 3px;
 }
 
 .nav-link {
@@ -57,7 +54,7 @@ html {
 }
 
 .main-image {
-    display: block;
+    display: inline;
     width: 100%;
     height: 1225px;
 }
@@ -81,4 +78,42 @@ html {
 .user-headline .user-name {
     padding: 30px 0;
     text-transform: uppercase;
+}
+
+.mobile-center-text {
+    width: 80%;
+    display: inline-block;
+    position: relative;
+    padding: 0 10%;
+}
+
+.profile {
+    top: -60px;
+}
+
+.external-site {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.external-site-wrapper {
+    width: 100%;
+    border-color: #6C45C4;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 25px 90px;
+    border-radius: 15px;
+    background-color: #6C45C4;
+}
+.external-site-wrapper img {
+    vertical-align: middle;
+}
+.external-site-link {
+    display: inline;
+    font-size: 25px;
+    color: white;
+    vertical-align: bottom;
+    text-decoration: none;
+    padding-left: 10px;
 }
