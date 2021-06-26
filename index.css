@@ -3,15 +3,9 @@ html {
     font-family: Sana, sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
-    .topbar {
-        background-color: #6C45C4;
-    }
-}
-
 header {
     position: sticky;
-    position: -webkit-sticky;
+    z-index: 1;
     top: 0;
 }
 
@@ -22,7 +16,7 @@ header {
     color: #333;
     text-decoration: none;
     box-shadow: 0 1px 0 0 rgba(3 3 3);
-    vertical-align: baseline
+    vertical-align: baseline;
 }
 
 .ul-logo {
@@ -52,6 +46,10 @@ header {
     display: inline;
 }
 
+.nav-link #blog-nav-link {
+    display: none;
+}
+
 .nav-link:hover {
     color: #0872b4;
 }
@@ -76,18 +74,22 @@ header {
     width: 100%;
 }
 
-.user-headline {
+.user-headline-mobile {
     position: relative;
     bottom: 200px;
 }
 
-.user-headline h2 {
+.user-headline-mobile h2 {
     color: white;
     font-size: 32px;
     text-align: center;
 }
 
-.user-headline .user-name {
+.user-headline {
+    display: none;
+}
+
+.user-name {
     padding: 30px 0;
     text-transform: uppercase;
 }
@@ -99,10 +101,9 @@ header {
     padding: 0 10%;
 }
 
-.profile {
-    top: -50px;
+.side-bio {
+    margin-top: 50px;
 }
-
 .external-site {
     text-align: center;
     vertical-align: middle;
@@ -114,7 +115,7 @@ header {
     display: inline-block;
     position: relative;
     box-sizing: border-box;
-    padding: 25px 90px;
+    padding: 25px 40px;
     border-radius: 15px;
     background-color: #6C45C4;
 }
@@ -130,6 +131,10 @@ header {
     padding-left: 10px;
 }
 
+.bio {
+    margin-top: 30px;
+}
+
 .bio p {
     font-size: 24px;
     color: #333333;
@@ -139,7 +144,7 @@ header {
 .meta {
     text-align: center;
     margin-top: 30px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .meta h3 {
